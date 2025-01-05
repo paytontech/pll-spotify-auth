@@ -8,7 +8,7 @@
 <body>
     <script type="text/javascript">
         const url = new URL(window.location).searchParams
-        if (url.includes("stripe")) {
+        if (url.toString().includes("stripe")) {
             window.location = `simplsyncpurchase://?${url}`
         } else {
             window.location = `pllspt-authcb://?${url}`
